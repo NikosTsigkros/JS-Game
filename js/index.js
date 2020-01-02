@@ -1,4 +1,4 @@
-import Car from '/js/car';
+import Car from "/js/car";
 
 // Canvas
 const bodyUI = document.querySelector("body");
@@ -16,6 +16,7 @@ const ctx = canvasUI.getContext("2d");
 
 ctx.clearRect(0, 0, gameWidth, gameHeight);
 
-let ford = new Car(gameWidth, gameHeight);
-ford.draw(ctx);
-
+let ford = new Car(gameWidth, gameHeight, 150, 100, "black");
+ford.draw(ctx, "red");
+let citroen = new Car(40, 40, 50, 20, "red");
+citroen.draw(ctx, "black");
